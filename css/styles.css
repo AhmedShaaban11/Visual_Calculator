@@ -1,0 +1,60 @@
+* {font-family: sans-serif}
+
+body {margin: 0; background-color: rgb(64, 115, 158)}
+
+.calculator {
+    background-color: transparent;
+    width: 260px;
+    margin: 30px auto;
+    border: 1px solid rgb(48, 48, 48);
+    -webkit-box-shadow: 0 0 5px rgb(30, 30, 30);
+    box-shadow: 0 0 5px rgb(30, 30, 30)
+}
+
+.calculator form > input {
+    font: bold 15px sans-serif;
+    background-color: rgb(245, 245, 245);
+    text-align: right;
+    letter-spacing: 2px;
+    width: 238px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid transparent;
+    outline: none
+}
+
+.calculator form input[type="text"]:first-of-type {border-bottom: 0}
+
+.calculator form input[type="text"]:last-of-type {
+    font-size: 20px;
+    border-top: 0;
+    border-bottom: 1px solid rgb(85, 85, 85)
+}
+
+.calculator form .buttons {
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+}
+
+.calculator form .buttons button {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font: bold 16px sans-serif;
+    outline: none
+}
+
+.calculator form .buttons .numbers {background-color: rgb(10, 135, 255); border: 1px solid rgb(29, 155, 255)}
+
+.calculator form .buttons .signs {background-color: rgb(18, 203, 196); border: 1px solid rgb(19, 221, 213)}
+
+.calculator form .buttons .signs:last-of-type {background-color: rgb(10, 135, 255); border: 1px solid rgb(29, 155, 255)}
+
+.calculator form .buttons .clear {background-color: rgb(93, 149, 255); border: 1px solid rgb(123, 168, 255)}
+
+.calculator form .buttons #equal {
+    background-color: rgb(6, 82, 221);
+    height: auto;
+    border: 1px solid rgb(0, 87, 245);
+    grid-area: 4 / 4 / 6 / 5
+}
